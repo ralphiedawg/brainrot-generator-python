@@ -10,7 +10,7 @@ def question():
     match userInput:
         case 'yes':
             while True:
-                vocabIndex = rand.randint(0,7)
+                vocabIndex = rand.randint(0,len(vocab))
                 print(vocab[vocabIndex])
                 time.sleep(0.3)
         case 'no':
